@@ -8,7 +8,7 @@ class BoardsController < ApplicationController
     end
 
     def create
-        Board.create(board_params)
+        board = Board.create(board_params)
         redirect_to board
     end
 
